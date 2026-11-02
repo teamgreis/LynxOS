@@ -191,3 +191,6 @@ Both artifacts are preliminary research instruments. Neither constitutes an arch
 - [Failure, Cancellation & Recovery Semantics](./F-001-C-failure-cancellation-recovery.md) — explicit fault classes, volatile/durable/observable state, cancellation, commit boundaries, and recovery strategies.
 - [Crash/retry finite-state experiment](../../../experiments/f001/failure_retry_model.py) — contrasts naive retry with atomic internal commit and durable request identity.
 - [Experiment notes](../../../experiments/f001/failure-retry-README.md) — scope and limitations.
+
+
+- [F-001-D — Resource-Aware Computation](F-001-D-resource-aware-computation.md): capacity, demand, allocation, consumption, contention, fairness, deadlines, and energy limits.
