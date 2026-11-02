@@ -53,12 +53,16 @@
 - [Lee and Matsikoudis — The Semantics of Dataflow with Firing](https://ptolemy.berkeley.edu/publications/papers/08/DataflowWithFiring/)
 - [De Koster et al. — 43 years of actors: a taxonomy of actor models and their key properties](https://doi.org/10.1145/3001886.3001890)
 - [Concurrency and atomicity](https://doi.org/10.1016/0304-3975(88)90096-5)
+- [Lamport — Time, Clocks, and the Ordering of Events in a Distributed System](https://doi.org/10.1145/359545.359563)
+- [Mazurkiewicz trace theory — Theory of traces](https://doi.org/10.1016/0304-3975(88)90051-5)
+- [C++ draft — Multi-threaded executions and data races](https://eel.is/c++draft/intro.races)
 
 ## 5. Review log
 
 | Date | Change | Status |
 |---|---|---|
 | 2026-11-02 | Initial model families and source set collected | Preliminary; needs primary-source review |
+| 2026-11-02 | Added causal partial orders, trace theory, and language memory-model references | Preliminary; source review pending |
 
 ## 6. Next actions
 
@@ -66,3 +70,4 @@
 - Record search queries and inclusion/exclusion criteria before calling this a systematic review.
 - Add one worked example per model using the same producer-consumer workload.
 - Record known limitations and counterexamples rather than only strengths.
+- Compare causal order and independence explicitly; do not conflate partial-order concurrency with simultaneous hardware execution.
