@@ -28,6 +28,7 @@ This is a research hypothesis. Its relationship to microkernels, capability syst
 - [Research model and open questions](docs/research/model.md)
 - [Expanded research concept atlas](docs/research/concept-atlas.md)
 - [Invention and novelty validation process](docs/research/novelty-validation.md)
+- [Frontier architecture proposals](docs/research/frontier-architecture.md)
 - [Roadmap](docs/roadmap.md)
 - [ADR 0001 — Initial project constraints](docs/decisions/0001-initial-project-constraints.md)
 
