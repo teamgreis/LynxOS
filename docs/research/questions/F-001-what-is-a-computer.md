@@ -194,3 +194,6 @@ Both artifacts are preliminary research instruments. Neither constitutes an arch
 
 
 - [F-001-D — Resource-Aware Computation](F-001-D-resource-aware-computation.md): capacity, demand, allocation, consumption, contention, fairness, deadlines, and energy limits.
+
+
+- [F-001-E — Location-Independent Computation](F-001-E-location-independent-computation.md): separates location-invariant semantics from placement-dependent costs, capabilities, authority, and failures.
