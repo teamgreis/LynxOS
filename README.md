@@ -24,6 +24,8 @@ This is a research hypothesis. Its relationship to microkernels, capability syst
 
 ## Documentation
 
+- [Foundational research agenda — clean-slate restart](docs/foundation/research-agenda.md)
+
 - [Technical foundation](docs/architecture/technical-foundation.md)
 - [Research model and open questions](docs/research/model.md)
 - [Expanded research concept atlas](docs/research/concept-atlas.md)
