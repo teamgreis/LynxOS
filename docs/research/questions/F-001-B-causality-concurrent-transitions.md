@@ -256,3 +256,19 @@ Potentially novel work, if any, must emerge from a precise combination or extens
 ## 11. Next step
 
 Create a worked, executable small-state model for the bounded producer-consumer example. Enumerate reachable states and transitions, then check whether proposed independent transitions satisfy the diamond condition and preserve observations.
+
+
+## 12. Executable experiment
+
+A small dependency-free explicit-state checker is available at [experiments/f001/concurrency_diamond.py](../../../experiments/f001/concurrency_diamond.py).
+
+Initial run results:
+
+| Model | Reachable states | Enabled action-pairs checked | Diamond pairs | Non-diamond pairs |
+|---|---:|---:|---:|---:|
+| Two independent one-slot channels | 9 | 4 | 4 | 0 |
+| Two producers competing for one shared slot | 3 | 1 | 0 | 1 |
+
+The result matches the deliberately constructed examples: independent channel operations commute under the model's state semantics, while two producers competing for a single slot do not.
+
+These are finite illustrative examples, not a general proof. The script, assumptions, and limitations are documented in the experiment README.
