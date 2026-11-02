@@ -178,3 +178,9 @@ Those decisions require separate evidence and approved architecture decision rec
 - [F-001 Related-Work Matrix](../methodology/related-work-matrix-f001.md) — broader map of computation and execution-model families.
 
 Both artifacts are preliminary research instruments. Neither constitutes an architecture decision.
+
+
+## 12. F-001-B supporting work
+
+- [Causality and Concurrent State Transitions](./F-001-B-causality-concurrent-transitions.md) — causal partial orders, state-dependent independence, diamond checks, and counterexamples.
+- [Executable explicit-state experiment](../../../experiments/f001/README.md) — small finite-state checker for independent channels and shared-slot contention.
