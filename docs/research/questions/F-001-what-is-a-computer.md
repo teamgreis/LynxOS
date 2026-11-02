@@ -184,3 +184,10 @@ Both artifacts are preliminary research instruments. Neither constitutes an arch
 
 - [Causality and Concurrent State Transitions](./F-001-B-causality-concurrent-transitions.md) — causal partial orders, state-dependent independence, diamond checks, and counterexamples.
 - [Executable explicit-state experiment](../../../experiments/f001/README.md) — small finite-state checker for independent channels and shared-slot contention.
+
+
+## 13. F-001-C supporting work
+
+- [Failure, Cancellation & Recovery Semantics](./F-001-C-failure-cancellation-recovery.md) — explicit fault classes, volatile/durable/observable state, cancellation, commit boundaries, and recovery strategies.
+- [Crash/retry finite-state experiment](../../../experiments/f001/failure_retry_model.py) — contrasts naive retry with atomic internal commit and durable request identity.
+- [Experiment notes](../../../experiments/f001/failure-retry-README.md) — scope and limitations.
