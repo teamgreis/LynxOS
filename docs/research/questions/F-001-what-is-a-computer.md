@@ -170,3 +170,11 @@ Those decisions require separate evidence and approved architecture decision rec
 ---
 
 **Research integrity note:** This is an initial synthesis, not a systematic literature review. The next revision must broaden the source base, distinguish primary sources from surveys, and record search terms, inclusion criteria, and unresolved disagreements.
+
+
+## 11. Supporting research artifacts
+
+- [Neutral Computation Model v0.1](./F-001-formal-model-v0.1.md) — candidate transition-based notation for cross-model comparison.
+- [F-001 Related-Work Matrix](../methodology/related-work-matrix-f001.md) — broader map of computation and execution-model families.
+
+Both artifacts are preliminary research instruments. Neither constitutes an architecture decision.
