@@ -197,3 +197,6 @@ Both artifacts are preliminary research instruments. Neither constitutes an arch
 
 
 - [F-001-E — Location-Independent Computation](F-001-E-location-independent-computation.md): separates location-invariant semantics from placement-dependent costs, capabilities, authority, and failures.
+
+
+- [F-001-F — Identity, Authority and Computation](F-001-F-identity-authority-computation.md): separates logical identity, execution incarnation, placement, proof, and authority across lifecycle events.
