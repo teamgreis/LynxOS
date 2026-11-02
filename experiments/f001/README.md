@@ -20,3 +20,15 @@ This experiment illustrates why state-dependent independence is more precise tha
 It does **not** prove correctness for arbitrary programs, real hardware, memory models, I/O, failure, or scheduling. The model deliberately omits consumers in the shared-slot example and does not model physical time.
 
 The next experiment should add consumer behavior, cancellation, crash states, bounded resources, and an explicit observation function. A later implementation should compare the same workload in a Petri net, dataflow model, and actor model.
+
+
+## Initial run
+
+The current script produces:
+
+| Model | Reachable states | Enabled action-pairs checked | Diamond pairs | Non-diamond pairs |
+|---|---:|---:|---:|---:|
+| Independent bounded channels | 9 | 4 | 4 | 0 |
+| Shared one-slot producer competition | 3 | 1 | 0 | 1 |
+
+This is a sanity check for the small model, not evidence of a general performance or correctness advantage.
