@@ -202,3 +202,6 @@ Both artifacts are preliminary research instruments. Neither constitutes an arch
 - [F-001-F — Identity, Authority and Computation](F-001-F-identity-authority-computation.md): separates logical identity, execution incarnation, placement, proof, and authority across lifecycle events.
 - [F-001-G — State, Memory and Continuity](F-001-G-state-memory-continuity.md)
 - [F-001-H — Time, Ordering and Temporal Semantics](F-001-H-time-ordering-temporal-semantics.md)
+- [F-001-I — Communication, Interaction and Information Flow](F-001-I-communication-interaction-information-flow.md)
+- [F-001-J — Computation, Representation and Meaning](F-001-J-computation-representation-meaning.md)
+- [F-001-K — Observation, Control and Feedback](F-001-K-observation-control-feedback.md)
