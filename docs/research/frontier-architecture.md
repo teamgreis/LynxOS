@@ -455,3 +455,8 @@ A world-first claim is not established by a name, a diagram, or a prototype that
 - Do not make autonomous adaptation capable of expanding its own authority.
 - Do not trade a small trusted core for a large unreviewable policy engine.
 - Do not call a concept globally novel until prior art has been investigated.
+
+
+## 12. Quality gate for frontier proposals
+
+Frontier proposals are hypotheses, not a roadmap or architecture selection. Each proposal must identify its attack surface, enforcement path, trusted-code impact, invariants, failure modes, and residual risks. Performance claims require baselines and reproducible measurements of tail latency, throughput, CPU, memory, I/O, data movement, and energy where relevant. Novelty requires a closest-prior-art comparison. A proposal that is less secure, less correct, or materially less efficient without a compensating and justified benefit must not advance. See [Engineering Quality Charter](../foundation/engineering-quality-charter.md).
