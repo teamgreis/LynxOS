@@ -1,9 +1,9 @@
 # LynxOS — Foundational Research Agenda
 
 - **Document:** LYNX-FOUNDATION-001
-- **Revision:** 1.0
+- **Revision:** 1.1
 - **Status:** Foundational agenda; no technical architecture selected
-- **Date:** 2026-11-02
+- **Date:** 2026-11-13
 
 ## 1. Mission
 
