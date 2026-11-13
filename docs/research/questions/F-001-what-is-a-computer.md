@@ -205,3 +205,6 @@ Both artifacts are preliminary research instruments. Neither constitutes an arch
 - [F-001-I — Communication, Interaction and Information Flow](F-001-I-communication-interaction-information-flow.md)
 - [F-001-J — Computation, Representation and Meaning](F-001-J-computation-representation-meaning.md)
 - [F-001-K — Observation, Control and Feedback](F-001-K-observation-control-feedback.md)
+- [F-001-L — System Boundaries, Composition and Emergence](F-001-L-system-boundaries-composition-emergence.md)
+- [F-001-M — Fault Containment, Isolation and Resilience](F-001-M-fault-containment-isolation-resilience.md)
+- [F-001-N — System Evolution, Adaptation and Reconfiguration](F-001-N-system-evolution-adaptation-reconfiguration.md)
