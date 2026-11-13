@@ -187,3 +187,8 @@ No final decisions have yet been made for:
 - Formal verification strategy.
 
 These topics should become individual design documents and ADRs as research progresses.
+
+
+## 13. Status under the Engineering Quality Charter
+
+This note is a historical candidate model, not an approved LynxOS architecture. TCC must be compared against at least three credible alternatives under identical workloads and threat assumptions. Its evaluation must include enforceable authority boundaries, TOCTOU and concurrency semantics, failure/cancellation behavior, trusted computing base size, transition and IPC latency distributions, CPU/memory overhead, data movement, energy where measurable, and adversarial resource-exhaustion cases. A model-level invariant is not an implementation guarantee until the enforcement path is specified and validated. See [Engineering Quality Charter](../foundation/engineering-quality-charter.md).
