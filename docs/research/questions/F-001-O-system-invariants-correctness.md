@@ -68,3 +68,16 @@ This is a teaching model, not a proof about an OS, scheduler, memory manager, or
 ## 8. Decision status
 
 **No decision.** This question establishes a vocabulary and experimental baseline. It does not select a verification architecture, proof assistant, model checker, or mandatory invariant set.
+
+## Cross-cutting evaluation contract — Engineering Quality Charter
+
+This research item is governed by the project-wide [Engineering Quality Charter](../../foundation/engineering-quality-charter.md). Evaluate its topic-specific claims across:
+
+- **Security:** assets, attacker capabilities, trust boundaries, enforcement path, least authority, abuse/DoS cases, and residual risks.
+- **Correctness and reliability:** explicit invariants, safety/liveness properties, concurrency and TOCTOU hazards, failure points, recovery semantics, and falsifying counterexamples.
+- **Performance:** credible baseline under the same workload; latency distributions including tail latency, throughput, and worst-case behavior where meaningful.
+- **Efficiency:** CPU, memory, allocations, synchronization, context switches, I/O, data movement, storage amplification, and energy where measurable.
+- **Innovation:** closest prior art and a precise, falsifiable difference. A new name or combination is not proof of global novelty.
+- **Evidence:** label results as conceptual, formalized, modeled, tested, measured, reviewed, verified, implemented, or production-validated. A toy-model PASS is not proof of a real operating-system guarantee.
+
+Where relevant, compare at least three credible approaches under equivalent assumptions. Record negative results and unmodeled behavior. Until threat analysis, comparative evaluation, and reproducibility requirements are met, this remains an initial research draft and cannot justify an architecture decision.
