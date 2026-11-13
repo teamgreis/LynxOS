@@ -219,4 +219,10 @@ Both artifacts are preliminary research instruments. Neither constitutes an arch
 - [F-001-W — Device Discovery, Drivers and Hardware Ownership](F-001-W-device-discovery-drivers-hardware-ownership.md)
 - [F-001-X — Interrupts and Event Handling](F-001-X-interrupts-event-handling.md)
 - [F-001-Y — CPU Scheduling and Execution Contexts](F-001-Y-cpu-scheduling-execution-contexts.md)
-- [F-001-Z — Storage Architecture and Persistence](F-001-Z-storage-architecture-persistence.md)
+- [F-001-Z — Storage Architecture and Persistence](F-001-Z-storage-architecture-persistence.md)## 14. Project-wide quality criteria
+
+All F-001 subquestions A–Z are governed by the [Engineering Quality Charter](../../foundation/engineering-quality-charter.md). The four explicit objectives are security, performance, efficiency, and evidence-based innovation. Correctness and scoped security guarantees are constraints. The supporting models are exploratory only; they do not establish production guarantees or benchmark results. Every item must progress through threat modelling, invariant definition, credible alternatives, reproducible tests, comparative measurements, and review before it can support an ADR.
+
+## 15. Quality charter
+
+- [Engineering Quality Charter](../../foundation/engineering-quality-charter.md) — authoritative project-wide criteria for threat models, performance and efficiency measurement, prior-art review, experiment quality, evidence labels, and architecture governance.
