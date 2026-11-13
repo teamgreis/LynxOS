@@ -33,6 +33,7 @@ LynxOS pursues security, performance, efficiency, and innovation together. Corre
 - [Roadmap](docs/roadmap.md)
 - [ADR 0001 — Initial project constraints](docs/decisions/0001-initial-project-constraints.md)
 - [ADR 0002 — Engineering Quality Charter](docs/decisions/0002-engineering-quality-charter.md)
+- [F-001 experiment suite and runner](experiments/f001/README.md)
 
 ## Long-term platform scope (not architecture decisions)
 
@@ -70,4 +71,4 @@ The repository currently contains planning and research documentation. No produc
 
 ## Project-wide quality rule
 
-All documents, experiments, prototypes, and future architecture decisions are governed by the [Engineering Quality Charter](docs/foundation/engineering-quality-charter.md). Toy-model success is not proof of implementation security or performance. No architecture proposal is preferred by default.
+All documents, experiments, prototypes, and future architecture decisions are governed by the [Engineering Quality Charter](docs/foundation/engineering-quality-charter.md). Toy-model success is not proof of implementation security or performance. No architecture proposal is preferred by default. The checked-in F-001 experiment scripts have a common runner and a least-privilege CI workflow; green CI means only that the scripts and their assertions complete successfully.
