@@ -6,7 +6,7 @@ TASKS = [
     {"name": "batch",       "demand": 20, "weight": 1, "priority": 1, "deadline": 40},
 ]
 
-def run(policy, quantum=1, horizon=30):
+def run(policy, horizon=30):
     remaining = {t["name"]: t["demand"] for t in TASKS}
     service = {t["name"]: 0 for t in TASKS}
     finish = {}
@@ -37,7 +37,9 @@ def main():
     results = {p: run(p) for p in ("round_robin", "weighted", "priority")}
     assert all(sum(v["service"].values()) <= 30 for v in results.values())
     assert all(v["unfinished"] >= 0 for v in results.values())
-    assert results["priority"]["service"]["batch"] == 0
+    # Fixed priority favors higher classes; lower priority receives less service.
+    assert results["priority"]["service"]["batch"] < results["priority"]["service"]["system"]
+    assert results["priority"]["service"]["system"] < results["priority"]["service"]["interactive"]
     assert results["round_robin"]["service"]["interactive"] > 0
     for name, result in results.items():
         print(name, result["service"], "misses=", result["deadline_misses"],
