@@ -1,6 +1,6 @@
 # LynxOS
 
-**LynxOS** is a research-driven operating-system project exploring a new computational and kernel model, a purpose-built systems language, and a security architecture designed around explicit authority and controlled state transitions.
+**LynxOS** is a research-driven operating-system project investigating a new computational and kernel model, a purpose-built systems language, and a high-assurance system architecture. No specific kernel, execution, memory, or authority model is selected.
 
 > **Project status:** Architecture research / pre-implementation. The ideas in this repository are hypotheses and design targets, not claims of proven novelty, correctness, or security.
 
@@ -34,20 +34,20 @@ LynxOS pursues security, performance, efficiency, and innovation together. Corre
 - [ADR 0001 — Initial project constraints](docs/decisions/0001-initial-project-constraints.md)
 - [ADR 0002 — Engineering Quality Charter](docs/decisions/0002-engineering-quality-charter.md)
 
-## Target architecture at a glance
+## Long-term platform scope (not architecture decisions)
 
-| Area | Direction |
+| Area | Research direction |
 |---|---|
 | Kernel | Open research question; minimize and justify privileged trusted code |
 | Computation model | Open research question; compare competing formal and operational models |
-| Language | Own statically typed systems language |
+| Language | Develop an independently specified systems language and toolchain |
 | Assembly | Small architecture-specific layer |
-| Initial CPU | x86-64 |
-| Later CPU | ARM64 |
-| IPC | Authority-checked message passing and controlled shared memory |
-| Storage | Own filesystem design; working name: LynxFS |
-| Networking | Native network stack and explicit network authority |
-| GUI | Native graphics, compositor, window manager, shell, UI framework |
+| Initial CPU | Evaluate x86-64 as the first implementation target |
+| Later CPU | Evaluate ARM64 portability after the initial model stabilizes |
+| IPC | Compare message passing, shared memory, event, and hybrid models |
+| Storage | Research native persistence and filesystem design; LynxFS is a working name |
+| Networking | Research native networking with explicit, enforceable access policy |
+| GUI | Long-term native graphical environment |
 | Security | Threat-modelled, enforceable guarantees; least authority and measurable containment |
 
 ## Development philosophy
