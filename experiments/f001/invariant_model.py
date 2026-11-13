@@ -2,7 +2,8 @@
 """Finite-state invariant exploration for F-001-O.
 
 Compares a guarded counter transition with an unsafe transition.
-This is a toy model, not a verification of a real implementation.
+The unsafe model is bounded at the first violating state so that the
+counterexample is finite and exploration terminates.
 """
 from collections import deque
 
@@ -17,8 +18,9 @@ def explore(guarded: bool):
 
     while queue:
         state = queue.popleft()
-        if state > CAPACITY and violation is None:
+        if state > CAPACITY:
             violation = state
+            continue  # retain the first bad state; do not explore beyond it
         next_state = state + 1
         if guarded and next_state > CAPACITY:
             continue
