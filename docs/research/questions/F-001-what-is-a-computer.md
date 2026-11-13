@@ -214,3 +214,6 @@ Both artifacts are preliminary research instruments. Neither constitutes an arch
 - [F-001-R — Computation, Information and Boundaries](F-001-R-computation-information-boundaries.md)
 - [F-001-S — Hardware Abstraction and Machine Independence](F-001-S-hardware-abstraction-machine-independence.md)
 - [F-001-T — System Bootstrapping and Self-Hosting](F-001-T-system-bootstrapping-self-hosting.md)
+- [F-001-U — Boot Architecture and Initial System State](F-001-U-boot-architecture-initial-system-state.md)
+- [F-001-V — Memory Architecture and Address Spaces](F-001-V-memory-architecture-address-spaces.md)
+- [F-001-W — Device Discovery, Drivers and Hardware Ownership](F-001-W-device-discovery-drivers-hardware-ownership.md)
