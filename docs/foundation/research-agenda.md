@@ -370,3 +370,12 @@ Exit criteria:
 - No kernel or language architecture is selected prematurely.
 
 The first success is not a boot screen. It is a research foundation strong enough to justify what should be built next.
+
+
+## 13. Project-wide Engineering Quality Charter
+
+The [Engineering Quality Charter](engineering-quality-charter.md) is binding for all research programs and artifacts. It makes security, performance, efficiency, and evidence-based innovation explicit review dimensions. Correctness and scoped security guarantees are hard constraints; performance and resource/energy efficiency are optimized within them. Every proposal must include a threat model, alternatives, invariants, failure behavior, measurable costs, prior-art comparison, falsification criteria, and an evidence/maturity label. This charter supersedes any earlier wording that could be read as allowing security or correctness to be traded away for speed.
+
+## 14. Research status clarification
+
+The A–Z F-001 documents are an evolving research map, not a complete systematic review. Their small Python models are exploratory and do not establish kernel-level guarantees, real-hardware performance, or global novelty. Items remain drafts until their missing evidence is supplied under the charter.
