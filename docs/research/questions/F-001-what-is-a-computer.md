@@ -217,3 +217,6 @@ Both artifacts are preliminary research instruments. Neither constitutes an arch
 - [F-001-U — Boot Architecture and Initial System State](F-001-U-boot-architecture-initial-system-state.md)
 - [F-001-V — Memory Architecture and Address Spaces](F-001-V-memory-architecture-address-spaces.md)
 - [F-001-W — Device Discovery, Drivers and Hardware Ownership](F-001-W-device-discovery-drivers-hardware-ownership.md)
+- [F-001-X — Interrupts and Event Handling](F-001-X-interrupts-event-handling.md)
+- [F-001-Y — CPU Scheduling and Execution Contexts](F-001-Y-cpu-scheduling-execution-contexts.md)
+- [F-001-Z — Storage Architecture and Persistence](F-001-Z-storage-architecture-persistence.md)
