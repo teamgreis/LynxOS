@@ -13,7 +13,7 @@ The project is not initially committed to a monolithic kernel, microkernel, unik
 
 The long-term ambition is a complete, independently developed computing platform: system architecture, kernel or alternative execution substrate, systems language, compiler and toolchain, runtime, core services, storage, networking, graphics environment, developer tools, and verification infrastructure.
 
-The project pursues both foundational research and practical engineering. Security, performance, reliability, usability, and independence are co-equal goals. They can conflict; trade-offs must be measured and documented rather than hidden behind a single "best" claim.
+The project pursues both foundational research and practical engineering. Security, performance, efficiency, and evidence-based innovation are explicit top-level objectives. Correctness and scoped security guarantees are hard constraints; reliability, usability, maintainability, portability, and independence are necessary system qualities. Trade-offs must be measured and documented rather than hidden behind a single "best" claim.
 
 ## 2. Binding project goals versus open design questions
 
@@ -52,7 +52,7 @@ No earlier LynxOS proposal is binding merely because it has already been documen
 2. **Prior art before novelty claims:** Compare with academic papers, standards, implementations, patents, and related fields.
 3. **Formal semantics before critical implementation:** Specify state, operations, invariants, and failure behavior.
 4. **Small trusted base:** Minimize what must be trusted; justify every privileged mechanism.
-5. **Measurement before performance claims:** Measure latency distributions, throughput, memory use, energy, and worst-case behavior.
+5. **Measurement before performance claims:** Measure latency distributions, throughput, CPU, memory, data movement, storage I/O, energy, and worst-case behavior where meaningful.
 6. **Threat models before security claims:** Identify adversaries, assets, trust assumptions, and attack surfaces.
 7. **Failure as a first-class case:** Specify partial failure, crash recovery, cancellation, corruption, and degraded operation.
 8. **Independent review:** Invite external review of major claims and critical designs.
