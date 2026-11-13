@@ -32,6 +32,7 @@ LynxOS pursues security, performance, efficiency, and innovation together. Corre
 - [Frontier architecture proposals](docs/research/frontier-architecture.md)
 - [Roadmap](docs/roadmap.md)
 - [ADR 0001 — Initial project constraints](docs/decisions/0001-initial-project-constraints.md)
+- [ADR 0002 — Engineering Quality Charter](docs/decisions/0002-engineering-quality-charter.md)
 
 ## Target architecture at a glance
 
