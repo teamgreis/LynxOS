@@ -72,3 +72,7 @@ The repository currently contains planning and research documentation. No produc
 ## Project-wide quality rule
 
 All documents, experiments, prototypes, and future architecture decisions are governed by the [Engineering Quality Charter](docs/foundation/engineering-quality-charter.md). Toy-model success is not proof of implementation security or performance. No architecture proposal is preferred by default. The checked-in F-001 experiment scripts have a common runner and a least-privilege CI workflow; green CI means only that the scripts and their assertions complete successfully.
+
+## Interactive TCC research lab
+
+A standalone browser-based model for exploring domains, capabilities, lifecycle transitions, snapshots, bounded event queues, toy scheduling, deterministic adversarial tests, invariant checks, and JSON session export is available at [`experiments/tcc-lab/index.html`](experiments/tcc-lab/index.html). Open the file locally in a modern browser. It has no external dependencies and is explicitly a research simulation, not a kernel or a security proof.
