@@ -135,3 +135,19 @@
 - [ ] Benchmark against appropriate reference systems.
 
 **Exit gate:** Claims about security, correctness, and performance are backed by reproducible evidence.
+
+
+## Cross-phase quality gates (apply to every phase)
+
+No phase exits solely because a feature appears to work. Each exit review must include:
+
+- Threat model, trust boundaries, attack surface, and residual-risk register.
+- Explicit safety/security invariants and negative/adversarial tests.
+- Failure injection, recovery, cancellation, and overload behavior.
+- Reproducible tests of the committed artifact, with toolchain and environment recorded.
+- Baseline comparisons and measurements appropriate to the phase: latency distributions, throughput, CPU, memory, I/O, data movement, and energy where available.
+- Complexity and trusted-computing-base accounting.
+- Prior-art comparison for claimed innovations.
+- Independent review proportionate to risk; formal verification for selected critical properties where feasible.
+
+Security and correctness are constraints, not performance trade-off variables. A phase must not advance if a critical invariant is violated or if its claimed guarantees lack an identified enforcement path. See the [Engineering Quality Charter](foundation/engineering-quality-charter.md).
