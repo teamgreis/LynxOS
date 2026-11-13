@@ -135,3 +135,16 @@ The experiment is not a compiler correctness proof. It does not cover overflow, 
 A computation's meaning is not identical to its syntax or physical representation. Equivalence depends on what observers are allowed to see. This makes explicit semantic contracts a prerequisite for meaningful claims about compiler correctness, portability, optimization, and abstraction.
 
 **Research status:** Initial conceptual survey and small interpreter/bytecode comparison prepared; formal refinement proofs and richer language models remain open.
+
+## Cross-cutting evaluation contract — Engineering Quality Charter
+
+This research item is governed by the project-wide [Engineering Quality Charter](../../foundation/engineering-quality-charter.md). Its topic-specific claims must be evaluated across all applicable dimensions:
+
+- **Security:** define assets, attacker capabilities, trust boundaries, enforcement path, least-authority behavior, abuse/DoS cases, and residual risks.
+- **Correctness and reliability:** state invariants, safety and liveness properties, concurrency/TOCTOU hazards, failure points, recovery semantics, and falsifying counterexamples.
+- **Performance:** compare against a credible baseline using the same workload; report latency distributions (including tail latency), throughput, and worst-case behavior where meaningful.
+- **Efficiency:** account for CPU, memory, allocations, synchronization, context switches, I/O, data movement, storage amplification, and energy where measurable.
+- **Innovation:** identify closest prior art and state the precise, falsifiable difference. Do not equate a new name or combination with global novelty.
+- **Evidence:** label results as conceptual, formalized, modeled, tested, measured, reviewed, verified, implemented, or production-validated. A toy-model PASS is not proof of a real operating-system guarantee.
+
+Where comparison is relevant, evaluate at least three credible approaches under equivalent assumptions. Record negative results and unmodeled behavior. Until the missing threat analysis, comparative evaluation, and reproducibility requirements are met, this document remains an initial research draft and cannot justify an architecture decision.
