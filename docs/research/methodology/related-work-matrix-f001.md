@@ -71,3 +71,7 @@
 - Add one worked example per model using the same producer-consumer workload.
 - Record known limitations and counterexamples rather than only strengths.
 - Compare causal order and independence explicitly; do not conflate partial-order concurrency with simultaneous hardware execution.
+
+## Comparative evaluation dimensions
+
+The matrix must not rank models on novelty or elegance alone. For each relevant family, record: security model and enforcement point; formal correctness evidence; fault/recovery behavior; latency and throughput under comparable workloads; CPU, memory, communication, storage and energy costs; trusted code and conceptual complexity; hardware assumptions; and closest prior art. Distinguish theoretical expressiveness from practical implementation performance. The [Engineering Quality Charter](../../foundation/engineering-quality-charter.md) defines the evidence standard.
