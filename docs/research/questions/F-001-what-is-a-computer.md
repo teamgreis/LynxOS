@@ -211,3 +211,6 @@ Both artifacts are preliminary research instruments. Neither constitutes an arch
 - [F-001-O — System Invariants and Correctness](F-001-O-system-invariants-correctness.md)
 - [F-001-P — Coordination, Synchronization and Consensus](F-001-P-coordination-synchronization-consensus.md)
 - [F-001-Q — Computation Models and Execution Structures](F-001-Q-computation-models-execution-structures.md)
+- [F-001-R — Computation, Information and Boundaries](F-001-R-computation-information-boundaries.md)
+- [F-001-S — Hardware Abstraction and Machine Independence](F-001-S-hardware-abstraction-machine-independence.md)
+- [F-001-T — System Bootstrapping and Self-Hosting](F-001-T-system-bootstrapping-self-hosting.md)
