@@ -208,3 +208,6 @@ Both artifacts are preliminary research instruments. Neither constitutes an arch
 - [F-001-L — System Boundaries, Composition and Emergence](F-001-L-system-boundaries-composition-emergence.md)
 - [F-001-M — Fault Containment, Isolation and Resilience](F-001-M-fault-containment-isolation-resilience.md)
 - [F-001-N — System Evolution, Adaptation and Reconfiguration](F-001-N-system-evolution-adaptation-reconfiguration.md)
+- [F-001-O — System Invariants and Correctness](F-001-O-system-invariants-correctness.md)
+- [F-001-P — Coordination, Synchronization and Consensus](F-001-P-coordination-synchronization-consensus.md)
+- [F-001-Q — Computation Models and Execution Structures](F-001-Q-computation-models-execution-structures.md)
