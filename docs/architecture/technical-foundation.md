@@ -2,7 +2,7 @@
 
 - **Document:** LYNX-FOUNDATION-001
 - **Version:** 1.0
-- **Status:** Draft / research baseline
+- **Status:** Historical research baseline; superseded by the project-wide Engineering Quality Charter
 - **Date:** 2026-11-02
 
 ## 1. Purpose
@@ -26,11 +26,11 @@ The following decisions were selected for the project:
 
 These are project constraints. They do not pre-judge the outcome of technical research.
 
-## 3. Kernel research direction: Transition-Centric Computing
+## 3. Historical candidate: Transition-Centric Computing
 
-The current working hypothesis is **Transition-Centric Computing (TCC)**.
+**Transition-Centric Computing (TCC) is not the current selected direction.** It is one historical candidate among multiple competing computational and kernel models. It must not be assumed by subsequent research or implementation.
 
-The model explores five primary concepts:
+The original proposal explored five primary concepts:
 
 1. **Domains** — isolation, ownership, identity, and resource-accounting boundaries.
 2. **States** — explicit state objects representing system or application state.
@@ -316,3 +316,10 @@ Major architectural decisions must be recorded as Architecture Decision Records 
 - Revisit criteria.
 
 Unresolved questions must remain visibly unresolved rather than being silently converted into assumptions.
+
+
+## 18. Superseding quality and architecture policy
+
+This document records an early research baseline and must be read together with the [Engineering Quality Charter](../foundation/engineering-quality-charter.md). Where this document sounds prescriptive about TCC, domains, transitions, or other mechanisms, those statements describe candidates, not approved architecture. No candidate is preferred until alternatives are compared under the same workload and threat model.
+
+Security and correctness guarantees are hard constraints. Performance and efficiency are optimized within those constraints and reported using reproducible measurements, including tail latency, throughput, CPU, memory, I/O, data movement, and energy where measurable. Novelty requires a defensible prior-art review and a falsifiable difference. All implementation phases require explicit threat models, invariants, failure injection, independent review proportionate to risk, and documented residual risks.
