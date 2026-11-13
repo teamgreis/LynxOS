@@ -150,3 +150,7 @@ Then compare how naturally each model expresses bounded buffering, backpressure,
 - [A Denotational Semantics for Dataflow with Firing](https://ptolemy.berkeley.edu/publications/papers/97/dataflow/) — firing rules and dataflow semantics.
 - [43 years of actors: a taxonomy of actor models and their key properties](https://doi.org/10.1145/3001886.3001890) — variations and properties of actor models.
 - [Register Machine](https://mathworld.wolfram.com/RegisterMachine.html) — a concise overview of register-machine structure.
+
+## 8. Quality and cost dimensions
+
+The notation is an analysis aid, not an implementation commitment. Any extension should make explicit (where applicable): attacker-controlled inputs, authority and trust assumptions, safety invariants, liveness assumptions, failure transitions, resource consumption, and observable side effects. A transition model should not treat execution as cost-free: candidate annotations may include CPU work, memory allocation/retention, communication bytes, storage writes, latency constraints, and energy proxies. These annotations are hypotheses until calibrated against an implementation and hardware. See the [Engineering Quality Charter](../../foundation/engineering-quality-charter.md).
