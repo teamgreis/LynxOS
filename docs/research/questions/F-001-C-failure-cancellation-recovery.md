@@ -192,3 +192,16 @@ Any proposed LynxOS contribution must identify a specific gap in existing work a
 3. Michael et al., [Recovering Shared Objects Without Stable Storage](https://doi.org/10.4230/LIPIcs.DISC.2017.36), DISC 2017.
 4. Fabbretti, Lanese, Stefani, [A Behavioral Theory for Distributed Systems with Weak Recovery](https://doi.org/10.46298/lmcs-21(3:1)2025), LMCS, 2025.
 5. Rahli et al., [EventML: Specification, verification, and implementation of crash-tolerant state machine replication systems](https://doi.org/10.1016/j.scico.2017.05.009), Science of Computer Programming, 2017.
+
+## Cross-cutting evaluation contract — Engineering Quality Charter
+
+This research item is governed by the project-wide [Engineering Quality Charter](../../foundation/engineering-quality-charter.md). Its topic-specific claims must be evaluated across all applicable dimensions:
+
+- **Security:** define assets, attacker capabilities, trust boundaries, enforcement path, least-authority behavior, abuse/DoS cases, and residual risks.
+- **Correctness and reliability:** state invariants, safety and liveness properties, concurrency/TOCTOU hazards, failure points, recovery semantics, and falsifying counterexamples.
+- **Performance:** compare against a credible baseline using the same workload; report latency distributions (including tail latency), throughput, and worst-case behavior where meaningful.
+- **Efficiency:** account for CPU, memory, allocations, synchronization, context switches, I/O, data movement, storage amplification, and energy where measurable.
+- **Innovation:** identify closest prior art and state the precise, falsifiable difference. Do not equate a new name or combination with global novelty.
+- **Evidence:** label results as conceptual, formalized, modeled, tested, measured, reviewed, verified, implemented, or production-validated. A toy-model PASS is not proof of a real operating-system guarantee.
+
+Where comparison is relevant, evaluate at least three credible approaches under equivalent assumptions. Record negative results and unmodeled behavior. Until the missing threat analysis, comparative evaluation, and reproducibility requirements are met, this document remains an initial research draft and cannot justify an architecture decision.
