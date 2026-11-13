@@ -257,3 +257,8 @@ No concept enters the implementation roadmap merely because it sounds innovative
 6. A prototype or formal proof plan.
 7. A measurable acceptance criterion.
 8. An ADR if it changes a binding architectural decision.
+
+
+## 12. Reclassification under the Engineering Quality Charter
+
+Every item in this atlas is a **concept candidate**, not an accepted feature, invention, or architecture recommendation. Candidates must be ranked by evidence, not enthusiasm. Before advancement, each needs a precise problem statement, closest prior art, threat model, formal invariants, failure and recovery semantics, three-way comparison where feasible, falsifiable experiments, and measured performance/efficiency costs. Concepts that add complexity without a demonstrated security, correctness, performance, or efficiency benefit should be simplified, deferred, or rejected. The charter is authoritative: [Engineering Quality Charter](../foundation/engineering-quality-charter.md).
