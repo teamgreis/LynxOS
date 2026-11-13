@@ -14,17 +14,16 @@
 - Maximum long-term independence, including compiler, runtime, core services, and tooling.
 - No Rust implementation.
 
-## Current architectural hypothesis
+## Current research posture
 
-The working research direction is **Transition-Centric Computing (TCC)**. It investigates whether computation can be structured around explicit domains, state objects, transitions, authorities, and resource budgets.
+No computational or kernel architecture is selected. Transition-Centric Computing (TCC), domains, state objects, transitions, authorities, and resource budgets are retained as research candidates only; they are not the assumed direction or preferred answer. Every candidate must compete against established and alternative models under the project-wide Engineering Quality Charter.
 
-A transition is intended to be a controlled operation with declared preconditions, required authority, resource constraints, effects, and postconditions. The kernel would validate security-sensitive transitions while allowing already-authorized execution to proceed without trapping into the kernel for every CPU instruction.
-
-This is a research hypothesis. Its relationship to microkernels, capability systems, transactional systems, actor models, state machines, and formally verified kernels must be evaluated before any novelty claim is made.
+LynxOS pursues security, performance, efficiency, and innovation together. Correctness and scoped security guarantees are constraints, not variables to trade away for benchmark gains. Performance and resource/energy efficiency must be measured against baselines, while innovation requires prior-art comparison and falsifiable evidence.
 
 ## Documentation
 
 - [Foundational research agenda — clean-slate restart](docs/foundation/research-agenda.md)
+- [Engineering Quality Charter — security, performance, efficiency, and innovation](docs/foundation/engineering-quality-charter.md)
 
 - [Technical foundation](docs/architecture/technical-foundation.md)
 - [Research model and open questions](docs/research/model.md)
@@ -38,8 +37,8 @@ This is a research hypothesis. Its relationship to microkernels, capability syst
 
 | Area | Direction |
 |---|---|
-| Kernel | New model; minimal privileged trusted core |
-| Computation model | Domains, state objects, transitions, authorities, budgets |
+| Kernel | Open research question; minimize and justify privileged trusted code |
+| Computation model | Open research question; compare competing formal and operational models |
 | Language | Own statically typed systems language |
 | Assembly | Small architecture-specific layer |
 | Initial CPU | x86-64 |
@@ -48,7 +47,7 @@ This is a research hypothesis. Its relationship to microkernels, capability syst
 | Storage | Own filesystem design; working name: LynxFS |
 | Networking | Native network stack and explicit network authority |
 | GUI | Native graphics, compositor, window manager, shell, UI framework |
-| Security | Least authority, isolation, revocation, auditable state changes |
+| Security | Threat-modelled, enforceable guarantees; least authority and measurable containment |
 
 ## Development philosophy
 
@@ -66,3 +65,8 @@ This is a research hypothesis. Its relationship to microkernels, capability syst
 ## Status
 
 The repository currently contains planning and research documentation. No production-ready kernel, compiler, runtime, drivers, or desktop environment is claimed to exist.
+
+
+## Project-wide quality rule
+
+All documents, experiments, prototypes, and future architecture decisions are governed by the [Engineering Quality Charter](docs/foundation/engineering-quality-charter.md). Toy-model success is not proof of implementation security or performance. No architecture proposal is preferred by default.
