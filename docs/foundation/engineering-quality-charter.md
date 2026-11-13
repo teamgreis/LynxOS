@@ -165,3 +165,7 @@ The current repository is not a working operating system. No kernel, compiler, f
 - Linux kernel documentation, [Memory Barriers](https://docs.kernel.org/core-api/wrappers/memory-barriers.html): hardware and compiler reordering make explicit memory-order semantics essential.
 - Linux kernel documentation, [EEVDF Scheduler](https://docs.kernel.org/scheduler/sched-eevdf.html): illustrates workload-sensitive fairness and latency trade-offs.
 - Linux kernel documentation, [NAPI](https://docs.kernel.org/networking/napi.html): illustrates interrupt/polling trade-offs and bounded work.
+
+## 13. Repository automation and supply-chain security
+
+CI workflows are part of the trusted development pipeline. They must use least-privilege token permissions, avoid executing untrusted code in privileged contexts, pin external actions to verified full-length commit SHAs (or use a stronger dependency lockfile when available), and keep action versions under automated review. Workflow changes are security-sensitive code and must be reviewed like other infrastructure. See [GitHub's secure-use guidance](https://docs.github.com/en/actions/reference/security/secure-use).
