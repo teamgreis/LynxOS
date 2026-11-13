@@ -1,0 +1,29 @@
+name: F-001 research experiments
+
+on:
+  push:
+    paths:
+      - "experiments/f001/**"
+      - ".github/workflows/f001-experiments.yml"
+  pull_request:
+    paths:
+      - "experiments/f001/**"
+      - ".github/workflows/f001-experiments.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  experiment-sanity:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Run all F-001 experiment scripts
+        run: python experiments/f001/run_all.py
