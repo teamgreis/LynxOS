@@ -31,3 +31,8 @@ LynxOS is intended to be a new operating-system research and engineering project
 ## Revisit criteria
 
 Revisit this ADR only if new research demonstrates that a constraint is infeasible, materially harmful, or inconsistent with the project's security and independence goals. Any change must be documented with rationale and impact.
+
+
+## 5. Quality constraints added by the Engineering Quality Charter
+
+This ADR does not select TCC or any particular kernel, memory, scheduling, storage, or security mechanism. The project-wide [Engineering Quality Charter](../foundation/engineering-quality-charter.md) now governs all future research and implementation. Security and correctness properties in the declared threat model are hard constraints; performance and efficiency are optimized within those constraints. Innovation requires a documented prior-art comparison and falsifiable evidence. The project must not interpret "new kernel model" as permission to reject proven mechanisms without evidence or to claim global novelty prematurely.
