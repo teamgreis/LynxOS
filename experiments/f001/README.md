@@ -36,3 +36,13 @@ This is a sanity check for the small model, not evidence of a general performanc
 ## Project-wide experiment quality requirements
 
 All experiments in this directory are exploratory models. Their outputs validate only the properties explicitly asserted by each model. They do not prove properties of a real kernel, hardware, cryptographic implementation, or production workload. Before an experiment is cited as evidence, execute the committed file itself and record the exact command, Python/tool versions, environment, output, and revision. Performance claims additionally require a conventional baseline, representative workloads, repeated measurements, tail latency, and resource/energy accounting where available. Security experiments must include attacker assumptions, negative tests, failure injection, and residual-risk notes. See the [Engineering Quality Charter](../../docs/foundation/engineering-quality-charter.md).
+
+## Run the complete experiment suite
+
+From the repository root:
+
+```sh
+python3 experiments/f001/run_all.py
+```
+
+The runner executes each checked-in Python experiment with the active interpreter, captures stdout/stderr, enforces a per-script timeout, and returns a failing exit code if any script fails. GitHub Actions runs the same command on relevant pushes and pull requests. A green run establishes only that the scripts completed and their own assertions passed; it does not prove the correctness of the model assumptions, security of an implementation, or real-hardware performance.
