@@ -102,3 +102,16 @@ Compare throughput, deadline misses and lateness, per-activity service and starv
 F-001-D does not establish that resources must be first-class objects in the eventual LynxOS architecture. It establishes a research requirement: any proposed computation model should be tested against scarcity, contention, temporal constraints, and enforceability rather than assuming valid transitions automatically imply progress.
 
 **Decision status:** No kernel model, scheduler, language, runtime, resource API, or allocation policy is selected.
+
+## Cross-cutting evaluation contract — Engineering Quality Charter
+
+This research item is governed by the project-wide [Engineering Quality Charter](../../foundation/engineering-quality-charter.md). Its topic-specific claims must be evaluated across all applicable dimensions:
+
+- **Security:** define assets, attacker capabilities, trust boundaries, enforcement path, least-authority behavior, abuse/DoS cases, and residual risks.
+- **Correctness and reliability:** state invariants, safety and liveness properties, concurrency/TOCTOU hazards, failure points, recovery semantics, and falsifying counterexamples.
+- **Performance:** compare against a credible baseline using the same workload; report latency distributions (including tail latency), throughput, and worst-case behavior where meaningful.
+- **Efficiency:** account for CPU, memory, allocations, synchronization, context switches, I/O, data movement, storage amplification, and energy where measurable.
+- **Innovation:** identify closest prior art and state the precise, falsifiable difference. Do not equate a new name or combination with global novelty.
+- **Evidence:** label results as conceptual, formalized, modeled, tested, measured, reviewed, verified, implemented, or production-validated. A toy-model PASS is not proof of a real operating-system guarantee.
+
+Where comparison is relevant, evaluate at least three credible approaches under equivalent assumptions. Record negative results and unmodeled behavior. Until the missing threat analysis, comparative evaluation, and reproducibility requirements are met, this document remains an initial research draft and cannot justify an architecture decision.
