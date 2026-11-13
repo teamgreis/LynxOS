@@ -88,3 +88,8 @@ A concept may enter the implementation roadmap only after its dossier is reviewe
 ## 8. Research integrity
 
 LynxOS documentation must not describe an idea as "the first", "unprecedented", "unbreakable", or "the safest" without evidence appropriate to that claim. Negative results and rejected approaches should be recorded; they are valuable research outcomes.
+
+
+## 9. Expanded quality test for novelty
+
+A novelty claim is insufficient unless the proposed difference improves a defined property or enables a capability not adequately served by prior art. Evaluate security, correctness, performance, resource/energy efficiency, complexity, reliability, and portability together. Compare against the closest established implementation, not a deliberately weak baseline. Publish negative results. The [Engineering Quality Charter](../foundation/engineering-quality-charter.md) governs all maturity and evidence claims.
